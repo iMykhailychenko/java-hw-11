@@ -3,6 +3,8 @@ public class Main {
         new Controller()
                 .taskOne()
                 .taskTwo()
-                .taskThree();
+                .taskThree()
+                .taskFour()
+                .taskFive();
     }
 }
