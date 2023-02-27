@@ -12,10 +12,6 @@ public class LinearGenerator {
     }
 
     public Stream<Long> getStream(long x) {
-        return Stream.iterate(x, this::next);
-    }
-
-    private long next(long x) {
-        return (a * x + c) % m;
+        return Stream.iterate(x, n -> (a * n + c) % m);
     }
 }
