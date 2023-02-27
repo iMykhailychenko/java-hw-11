@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.stream.Stream;
 
 public class Controller {
-    private final String[] names = new String[]{"Ivan", "Bob", "Semen", "Alex", "Max"};
+    private final List<String> names = List.of("Ivan", "Bob", "Semen", "Alex", "Max");
 
     public Controller taskOne() {
         String task1 = new Names().format(names);
